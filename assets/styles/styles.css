@@ -1,0 +1,562 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .intro .intro__button button, main .novedades .novedades__button button {
+  display: block;
+  margin: 0 auto;
+  width: 288px;
+  height: 48px;
+  color: #060A24;
+  background-color: #00F3BB;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+main .intro .intro__button button:hover, main .novedades .novedades__button button:hover {
+  color: #FFFFFF;
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0 auto;
+}
+
+body h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+body h2 {
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+body p {
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+header .logo img {
+  margin: .5rem;
+  float: left;
+}
+
+header .menu {
+  /* ¡QUE ALÁ NOS AYUDE! */
+}
+
+header .menu label {
+  float: right;
+  cursor: pointer;
+}
+
+header .menu label span {
+  display: block;
+  position: relative;
+  content: "";
+  width: 18px;
+  height: 2px;
+  top: -3px;
+  background-color: #000000;
+  margin: 1.4rem 1rem;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+}
+
+header .menu label span::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  background-color: #000000;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+header .menu label span::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: -5px;
+  background-color: #000000;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+header .menu input {
+  display: none;
+}
+
+header .menu nav {
+  clear: both;
+}
+
+header .menu nav ul {
+  list-style: none;
+  background-color: #0000EC;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height .3s ease-in-out;
+  transition: max-height .3s ease-in-out;
+  z-index: 9;
+}
+
+header .menu nav ul li {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: .5rem;
+}
+
+header .menu nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+header .menu input:checked ~ nav ul {
+  max-height: 145px;
+}
+
+header .menu input:checked ~ label span {
+  background-color: transparent;
+}
+
+header .menu input:checked ~ label span::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+header .menu input:checked ~ label span::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main .intro {
+  margin: 0 16px;
+}
+
+main .intro .intro__titulo .tachado {
+  text-decoration: line-through;
+}
+
+main .intro .intro__texto {
+  margin-top: 16px;
+}
+
+main .intro .intro__button {
+  margin: 36px 0 22px;
+}
+
+main .episodios {
+  position: relative;
+  margin: 32px 0 48px;
+  padding-top: 32px;
+}
+
+main .episodios h1 {
+  margin: 1rem;
+  color: #ffffff;
+}
+
+main .episodios .episodios__bg {
+  position: absolute;
+  width: 100%;
+  height: 1190px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewY(-4.5deg);
+          transform: skewY(-4.5deg);
+  top: 12px;
+  z-index: -9;
+}
+
+main .episodios .episodios__iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .episodios .episodios__iframe iframe {
+  margin: 5px 11px;
+  width: 298px;
+  height: 232px;
+}
+
+main .venimos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .venimos .venimos__phone img {
+  width: 320px;
+}
+
+main .venimos .venimos__texto {
+  margin: 32px 16px;
+}
+
+main .venimos .venimos__texto p {
+  margin: 16px 0px;
+  text-align: justify;
+}
+
+main .venimos .venimos__texto p:last-child {
+  margin: 0px;
+}
+
+main .invitados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .invitados .invitados__texto {
+  margin: 16px 16px;
+}
+
+main .invitados .invitados__imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .invitados .invitados__imagenes img {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 243px;
+}
+
+main .temas {
+  margin: 48px 16px;
+}
+
+main .temas .temas__imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .temas .temas__imagenes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .temas img {
+  display: block;
+  margin: 48px auto 16px;
+}
+
+main .novedades {
+  position: relative;
+  margin: 112px 0px 32px;
+}
+
+main .novedades h1 {
+  margin: 0 1rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+main .novedades .novedades__button {
+  margin: 48px 16px 64px;
+}
+
+main .novedades .novedades__button button {
+  display: block;
+  margin: auto;
+}
+
+main .novedades .novedades__bg {
+  position: absolute;
+  width: 100%;
+  height: 375px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewY(-4.5deg);
+          transform: skewY(-4.5deg);
+  top: -60px;
+  z-index: -9;
+}
+
+.footer {
+  height: 120px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__texto p {
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.footer .footer__iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__iconos a {
+  margin: 16px;
+  color: #060A24;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+  body h1 {
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  body h2 {
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  body p {
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+  header {
+    height: 80px;
+    padding: 0 16px;
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .logo img {
+    width: 36px;
+  }
+  header .menu label {
+    display: none;
+  }
+  header .menu nav ul {
+    width: 100%;
+    max-height: unset;
+    background-color: transparent;
+  }
+  header .menu nav ul li {
+    display: inline-block;
+    width: unset;
+    padding: 2rem;
+  }
+  header .menu nav ul li a {
+    color: #000000;
+  }
+  header .menu nav ul li a:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+  }
+  main .intro .intro__titulo h1 {
+    font-size: 64px;
+  }
+  main .intro .intro__titulo .punto {
+    color: #0000EC;
+  }
+  main .intro .intro__texto {
+    margin-top: 16px;
+  }
+  main .intro .intro__button {
+    margin: 36px 0 22px;
+  }
+  main .intro .intro__button button {
+    margin: unset;
+    width: 226px;
+    height: 56px;
+  }
+  main .episodios {
+    position: relative;
+    margin: 120px 0 48px;
+  }
+  main .episodios h1 {
+    margin: 26px 200px;
+  }
+  main .episodios .episodios__bg {
+    height: 880px;
+    top: -50px;
+  }
+  main .episodios .episodios__iframe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .episodios .episodios__iframe iframe {
+    margin: 18px 36px;
+    width: 584px;
+    height: 232px;
+  }
+  main .venimos {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .venimos .venimos__phone img {
+    width: 457.6px;
+    display: block;
+    margin: 0 0 0 200px;
+  }
+  main .venimos .venimos__texto {
+    margin: 32px 256px 0 64px;
+  }
+  main .venimos .venimos__texto h1 {
+    font-size: 48px;
+  }
+  main .venimos .venimos__texto p {
+    margin: 16px 0px;
+    text-align: justify;
+  }
+  main .invitados .invitados__texto {
+    margin: 64px 200px;
+  }
+  main .invitados .invitados__imagenes img {
+    width: 480px;
+    height: 364px;
+  }
+  main .temas {
+    margin: 64px 200px;
+  }
+  main .temas .temas__imagenes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .temas .temas__imagenes div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 16px 60px;
+  }
+  main .novedades {
+    margin: 213px 0px 151px;
+  }
+  main .novedades .novedades__button {
+    margin: 48px 0px 64px;
+  }
+  main .novedades .novedades__button button {
+    width: 345px;
+    height: 56px;
+  }
+  main .novedades .novedades__bg {
+    height: 475px;
+    top: -120px;
+  }
+  .footer {
+    height: 120px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .footer__iconos {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
