@@ -11,16 +11,16 @@ main .intro .intro__button button, main .novedades .novedades__button button {
   margin: 0 auto;
   width: 288px;
   height: 48px;
-  color: #060A24;
-  background-color: #00F3BB;
+  color: #060a24;
+  background-color: #00f3bb;
   border: none;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 main .intro .intro__button button:hover, main .novedades .novedades__button button:hover {
-  color: #FFFFFF;
-  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffffff;
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
 }
 
 html {
@@ -28,14 +28,14 @@ html {
 }
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   margin: 0 auto;
 }
 
 body h1 {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
-  color: #060A24;
+  color: #060a24;
   letter-spacing: 0;
   line-height: 42px;
   font-weight: 400;
@@ -43,14 +43,14 @@ body h1 {
 
 body h2 {
   font-size: 24px;
-  color: #060A24;
+  color: #060a24;
   letter-spacing: 0;
   text-align: center;
 }
 
 body p {
   font-size: 14px;
-  color: #060A24;
+  color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
 }
@@ -63,7 +63,7 @@ header {
 }
 
 header .logo img {
-  margin: .5rem;
+  margin: 0.5rem;
   float: left;
 }
 
@@ -85,8 +85,8 @@ header .menu label span {
   top: -3px;
   background-color: #000000;
   margin: 1.4rem 1rem;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 header .menu label span::before {
@@ -97,10 +97,10 @@ header .menu label span::before {
   height: 100%;
   top: -5px;
   background-color: #000000;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 header .menu label span::after {
@@ -111,10 +111,10 @@ header .menu label span::after {
   height: 100%;
   bottom: -5px;
   background-color: #000000;
-  -webkit-transition: -webkit-transform .3s ease-out;
-  transition: -webkit-transform .3s ease-out;
-  transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 header .menu input {
@@ -127,11 +127,11 @@ header .menu nav {
 
 header .menu nav ul {
   list-style: none;
-  background-color: #0000EC;
+  background-color: #0000ec;
   max-height: 0px;
   overflow: hidden;
-  -webkit-transition: max-height .3s ease-in-out;
-  transition: max-height .3s ease-in-out;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
   z-index: 9;
 }
 
@@ -140,7 +140,7 @@ header .menu nav ul li {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 header .menu nav ul li a {
@@ -204,7 +204,7 @@ main .episodios .episodios__bg {
   position: absolute;
   width: 100%;
   height: 1190px;
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   -webkit-transform: skewY(-4.5deg);
           transform: skewY(-4.5deg);
   top: 12px;
@@ -226,6 +226,7 @@ main .episodios .episodios__iframe iframe {
   margin: 5px 11px;
   width: 298px;
   height: 232px;
+  border: none;
 }
 
 main .venimos {
@@ -319,7 +320,7 @@ main .novedades {
 
 main .novedades h1 {
   margin: 0 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -336,7 +337,7 @@ main .novedades .novedades__bg {
   position: absolute;
   width: 100%;
   height: 375px;
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   -webkit-transform: skewY(-4.5deg);
           transform: skewY(-4.5deg);
   top: -60px;
@@ -363,7 +364,7 @@ main .novedades .novedades__bg {
 
 .footer .footer__texto p {
   font-size: 14px;
-  color: #060A24;
+  color: #060a24;
   letter-spacing: 0;
   line-height: 22px;
 }
@@ -379,7 +380,7 @@ main .novedades .novedades__bg {
 
 .footer .footer__iconos a {
   margin: 16px;
-  color: #060A24;
+  color: #060a24;
 }
 
 @media screen and (min-width: 1440px) {
@@ -388,19 +389,19 @@ main .novedades .novedades__bg {
   }
   body h1 {
     font-size: 48px;
-    color: #060A24;
+    color: #060a24;
     letter-spacing: 0;
     font-weight: 400;
   }
   body h2 {
     font-size: 24px;
-    color: #060A24;
+    color: #060a24;
     letter-spacing: 0;
     text-align: center;
   }
   body p {
     font-size: 16px;
-    color: #060A24;
+    color: #060a24;
     letter-spacing: 0;
     line-height: 24px;
   }
@@ -439,13 +440,13 @@ main .novedades .novedades__bg {
   }
   header .menu nav ul li a:hover {
     text-decoration: line-through;
-    color: #00F3BB;
+    color: #00f3bb;
   }
   main .intro .intro__titulo h1 {
     font-size: 64px;
   }
   main .intro .intro__titulo .punto {
-    color: #0000EC;
+    color: #0000ec;
   }
   main .intro .intro__texto {
     margin-top: 16px;
@@ -480,6 +481,7 @@ main .novedades .novedades__bg {
             justify-content: center;
   }
   main .episodios .episodios__iframe iframe {
+    border: none;
     margin: 18px 36px;
     width: 584px;
     height: 232px;
