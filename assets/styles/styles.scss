@@ -190,6 +190,8 @@ main {
     .venimos__phone {
       img {
         width: 320px;
+        /* position: relative;
+        top: -1px; */
       }
     }
     .venimos__texto {
@@ -237,7 +239,8 @@ main {
   }
   .novedades {
     position: relative;
-    margin: 112px 0px 32px;
+    padding: 112px 0px 32px;
+    overflow: hidden;
     h1 {
       margin: 0 1rem;
       color: #ffffff;
@@ -257,7 +260,7 @@ main {
       height: 375px;
       background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
       transform: skewY(-4.5deg);
-      top: -60px;
+      top: 60px;
       z-index: -9;
     }
   }
@@ -433,7 +436,9 @@ main {
       }
     }
     .novedades {
-      margin: 213px 0px 151px;
+      h1 {
+        padding-top: 1.5em;
+      }
       .novedades__button {
         margin: 48px 0px 64px;
         button {
@@ -443,7 +448,7 @@ main {
       }
       .novedades__bg {
         height: 475px;
-        top: -120px;
+        top: 60px;
       }
     }
   }
