@@ -342,6 +342,10 @@ main {
                 text-decoration: line-through;
                 color: #00f3bb;
               }
+              &:active {
+                text-decoration: line-through;
+                color: rgba(6, 10, 36, 0.56);
+              }
             }
           }
         }

@@ -445,6 +445,10 @@ main .novedades .novedades__bg {
     text-decoration: line-through;
     color: #00f3bb;
   }
+  header .menu nav ul li a:active {
+    text-decoration: line-through;
+    color: rgba(6, 10, 36, 0.56);
+  }
   main .intro .intro__titulo h1 {
     font-size: 64px;
   }
